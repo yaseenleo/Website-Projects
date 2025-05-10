@@ -1,0 +1,254 @@
+@import "shared/layout";
+
+body {
+    background: url($url + "/assets/frontend/images/bg/order-bg.webp");
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Lato";
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: transparent !important;
+    position: sticky !important;
+
+    .btn-live {
+        background-color: #ffffff !important;
+    }
+
+    .btn-live:hover {
+        color: #1E4454 !important;
+    }
+
+    .navbar-brand {
+        background-color: #ffffff !important;
+        border-radius: 6px !important;
+        padding: 8px 16px !important;
+    }
+
+    .navbar-nav li {
+        display: none;
+    }
+
+    .navbar-nav li:last-child {
+        display: block;
+    }
+}
+
+section.order-form {
+    align-items: center;
+    height: 100%;
+    padding: 0 0 50px;
+
+    .bg-white {
+        backdrop-filter: blur(5px);
+        background-color: rgb(0 0 0 / 55%) !important;
+        border: 1px solid #ffffff7a;
+        border-radius: 10px;
+        margin-bottom: 80px;
+        margin-top: 40px;
+        padding: 10px 20px 20px;
+
+        .h1,
+        h1 {
+            color: white;
+            font-size: 24px !important;
+            margin: 10px 0 !important;
+        }
+
+        hr {
+            margin: 0.5rem 0;
+        }
+
+        label {
+            color: #fff;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .form-control {
+            border: unset;
+            border: 1px solid #dfe3e6;
+            border-radius: 7px;
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            height: 40px;
+            margin: 0px 0px 10px;
+            padding-left: 0;
+            padding-right: 0;
+            text-indent: 15px;
+        }
+
+        .form-check {
+            color: white;
+            cursor: pointer;
+        }
+
+        ::-webkit-input-placeholder {
+            background-color: #fff;
+            color: #000000;
+        }
+
+        :-ms-input-placeholder {
+            background-color: #fff;
+            color: #000000;
+        }
+
+        ::placeholder {
+            background-color: #fff;
+            color: #000000;
+        }
+
+        select {
+            background-color: #fff;
+        }
+
+        option:not(:checked) {
+            background: #fff;
+            color: #000;
+        }
+
+        p {
+            color: #fff !important;
+            margin-bottom: 8px !important;
+        }
+
+        textarea {
+            height: 120px !important;
+            resize: none !important;
+        }
+
+        section.order-form .bg-white .label-file .form-check-label {
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0px 0px;
+        }
+
+        .form-check-input {
+            background-color: transparent;
+            border: 1px solid #fff;
+            cursor: pointer;
+            font-size: 20px;
+
+            &[type="radio"] {
+                border-radius: 20%;
+            }
+        }
+
+        .form-check-input:checked {
+            background-color: #d40c0e;
+            border-color: #d40c0e;
+            font-size: 20px;
+        }
+
+        .form-check-input:focus {
+            box-shadow: none;
+        }
+
+        .h6 {
+            color: #fff !important;
+            margin-bottom: 8px !important;
+            margin-top: 16px;
+        }
+
+        .label-file {
+            border: 2px dashed #ffffff45;
+            border-radius: 7px;
+            padding: 5px 15px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .file-text {
+            align-items: center;
+            color: white;
+            display: flex;
+            font-size: 12px;
+            justify-content: center;
+
+            i {
+                color: #ffffff;
+                font-size: 20px;
+                margin-right: 10px;
+            }
+
+            .text-area {
+                padding: 0px 30px 0px;
+                text-align: left;
+
+                .h5 {
+                    font-size: 14px !important;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .upload-text {
+            color: #3e3e3e;
+            display: block;
+            font-size: 13px;
+            margin: 15px 0px;
+        }
+
+        .pdf-text {
+            color: #3e3e3e59;
+            display: block;
+            font-size: 14px;
+        }
+
+        .h-auto {
+            background: transparent;
+        }
+
+        .btn-order {
+            font-size: 16px !important;
+            width: 180px !important;
+        }
+
+        .label-1 {
+            color: #3e3e3e;
+        }
+
+        ul {
+            li {
+                color: #fff !important;
+            }
+        }
+
+        .form-control:focus {
+            box-shadow: unset;
+        }
+    }
+
+    .copyrights {
+        border-top: 1px solid #fff;
+        padding: 10px 0 0;
+
+        p {
+            color: #fff;
+        }
+
+        img {
+            margin-left: auto;
+        }
+    }
+}
+
+.footer {
+    display: none;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {}
+
+@media (max-width: 420px) {}

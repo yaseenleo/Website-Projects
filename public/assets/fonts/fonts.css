@@ -1,0 +1,31 @@
+@font-face {
+	font-display: swap;
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/assets/fonts/vendor/lato/lato-v24-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Ivymode-bold';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/assets/fonts/vendor/ivy-mode/Ivymode-bold.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Ivymode-semibold';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/assets/fonts/vendor/ivy-mode/Ivymode-semibold.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Ivymode';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/assets/fonts/vendor/ivy-mode/Ivymode.woff2') format('woff2');
+}

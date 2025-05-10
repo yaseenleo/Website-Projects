@@ -1,0 +1,31 @@
+$url: 'https://american-book-writer-app.test';
+
+$fa-font-display: swap !default;
+$fa-font-path: $url + '/assets/fonts/vendor/@fortawesome/fontawesome-free' !default;
+
+@import '~bootstrap';
+
+@import '~animate.css';
+
+@import '~swiper/css/bundle';
+
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+@font-face {
+    font-display: swap;
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Font Awesome 6 Free'),
+    url('#{$fa-font-path}/fa-solid-900.woff2') format('woff2'),
+}
+
+i {
+
+    &.fas,
+    &.fa-solid {
+        font-family: 'Font Awesome 6 Free';
+    }
+}

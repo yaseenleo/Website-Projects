@@ -1,0 +1,293 @@
+@import 'shared/layout';
+
+.navbar {
+    background: #fff;
+}
+
+.booking-form {
+    padding: 160px 0px;
+
+    .form-box {
+        border-radius: 12px;
+        margin: auto;
+        max-width: 992px;
+        padding: 40px 20px 40px 40px;
+        width: unset;
+
+        .box-image {
+            height: 57px;
+            width: 204px;
+        }
+
+        .h5 {
+            font-size: 26px !important;
+            margin-top: 50px;
+            position: relative;
+
+            &::after {
+                background: rgba(0, 0, 0, 0.1215686275);
+                content: "";
+                height: 1px;
+                left: 0;
+                position: absolute;
+                top: -70%;
+                width: 100%;
+            }
+        }
+
+        .time {
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .schedules {
+            span {
+                display: block;
+                font-weight: 600;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    .detail-box {
+        padding: 0px 20px 0 30px;
+        position: relative;
+
+        &::before {
+            background: #0000001f;
+            content: "";
+            height: 100%;
+            left: 0%;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            width: 1px;
+        }
+
+        .back {
+            position: relative;
+
+            i {
+                color: #000;
+                font-size: 20px;
+                position: absolute;
+                top: -18px;
+            }
+        }
+
+        .heading {
+            display: block;
+            font-size: 22px;
+            font-weight: 600;
+            padding: 25px 0px 20px;
+        }
+
+        .form-label {
+            font-weight: 600;
+        }
+
+        textarea {
+            &.form-control {
+                height: 90px;
+                resize: none;
+            }
+        }
+
+        .form-control {
+            font-size: 14px;
+            padding: 8px 10px;
+
+            &:focus,
+            &:active,
+            &.active {
+                border: 1px solid #EF323C;
+                box-shadow: none;
+            }
+
+            &textarea {
+                height: 90px;
+                resize: none;
+            }
+        }
+
+        .form-check {
+            padding-left: 2.5em !important;
+
+            .form-check-input {
+                &:checked {
+                    background-color: #d40c0e;
+                    border-color: #d40c0e;
+                    height: 15px;
+                    width: 15px;
+                }
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            i {
+                margin: 0px 2px;
+            }
+        }
+
+        .confirm-date {
+            display: flex;
+
+            .btn-order {
+                font-size: 14px !important;
+                line-height: 1.8;
+                margin: 0 2px;
+                margin-top: 10px;
+                padding: 5px 10px !important;
+                width: -webkit-fill-available;
+            }
+
+            .confirm {
+                background: transparent !important;
+                border: 1px solid !important;
+                color: #d40c0e !important;
+            }
+        }
+
+        form {
+            .calender-area {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            button.btn-live {
+                background: #d40c0e !important;
+                border-color: #d40c0e !important;
+                color: #fff !important;
+                font-size: 20px !important;
+                height: 45px;
+                margin-top: 30px;
+                width: 300px;
+            }
+        }
+
+        .date-picker {
+            width: 60%;
+        }
+
+        .select-date {
+            margin-left: 10px;
+            max-height: 200px;
+            min-height: 290px;
+            overflow-x: hidden;
+            padding: 0 10px 0 0;
+            width: 40%;
+
+            &::-webkit-scrollbar {
+                width: 0.6em;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #fff;
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #000;
+                border-radius: 25px;
+            }
+
+            h3 {
+                font-size: 22px !important;
+            }
+        }
+
+        .vuejs3-datepicker__calendar {
+            width: 100%;
+
+            .vuejs3-datepicker__calendar-topbar {
+                display: none;
+            }
+
+            .cell {
+                border: 0px !important;
+                border-radius: 50%;
+
+                &.selected {
+                    background: #d40c0e;
+                    font-weight: 600;
+                    height: 40px;
+                    line-height: 2.8;
+                    width: 13%;
+                }
+
+                &:hover {
+                    border: none !important;
+                }
+            }
+        }
+
+        .disabled {
+            background: #EEE !important;
+            color: #4F4D4D !important;
+            border-color: #eee !important;
+            cursor: not-allowed;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .booking-form {
+        padding-bottom: 0;
+
+        .form-box {
+            padding: 40px 10px;
+            text-align: center;
+
+            .box-image {
+                margin: 0 auto;
+            }
+
+            .detail-box {
+                padding: 30px 10px 0;
+
+                &::before,
+                &::after {
+                    display: none;
+                }
+
+                form {
+                    text-align: left;
+
+                    .calender-area {
+                        display: block;
+                    }
+
+                    .select-date {
+                        margin: 30px auto 0;
+                        width: 250px;
+
+                        h3,
+                        .h3 {
+                            text-align: center;
+                        }
+                    }
+
+                    button.btn-live {
+                        display: block;
+                        margin: 30px auto 0;
+                        width: 250px;
+                    }
+                }
+
+                .date-picker {
+                    width: 100%;
+                }
+            }
+
+            h3,
+            .h3 {
+                text-align: center;
+            }
+        }
+    }
+}
